@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Manipulation</title>
+	<script type="text/javascript" src="string.js">
+	</script>
+	<style type="text/css">
+		.content{
+	height:500px;
+	width:600px;
+	margin-top: 20px;
+	border-radius: 20px;
+	margin: auto;
+	text-align: center;	
+}</style>
+</head>
+<body>
+	<div class="content">
+		<h1> String Manupulation</h1>
+		<form id="manipulationForm">
+			<h2>Enter a String:</h2>
+			<input type="text" id="str" required placeholder="Enter a String:">
+			<select class="form-select mt-2" onchange="callFunction(this.value)">
+				<option disabled selected>Select Option</option>
+				<option value="1" >Capitalize</option>
+				<option value="2">Existence Check</option>
+				<option value="3">Occurrence Count</option>
+				<option value="4">Density Calculation</option>
+				<option value="5">Extension Extraction</option>
+				<option value="6">Whitespace Removal</option>
+				<option value="7">Reverse Words</option>
+				<option value="8">Vowel Count</option>
+				<option value="9">Palindrome Check</option>
+				<option value="10">Truncation</option>
+				<option value="11">Masking</option> 
+				<option value="12">Email Validation</option>
+			</select>
+			<input type="file" id="myfile" name="myfile" onchange="fileExtration()">
+			<br>
+		</form>
+			<div class="ans">
+			<p id="outputResult"></p>
+			</div>
+	</div>
+</body>
+</html>
